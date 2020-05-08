@@ -30,14 +30,14 @@ import setuptools
 import sys
 
 sys.path.append(str(pathlib.Path(__file__).parent))
-import feedparser
+import feedparser_craigslist
 
 with open('README.rst', 'r') as f:
     long_description = f.read()
 
 setuptools.setup(
-    name='feedparser',
-    version=feedparser.__version__,
+    name='feedparser_craigslist',
+    version=feedparser_craigslist.__version__,
     license='BSD-2-Clause',
     description='Universal feed parser, handles RSS 0.9x, RSS 1.0, RSS 2.0, CDF, Atom 0.3, and Atom 1.0 feeds',
     long_description=long_description,
@@ -47,7 +47,7 @@ setuptools.setup(
     url='https://github.com/kurtmckee/feedparser',
     download_url='https://pypi.python.org/pypi/feedparser',
     platforms=['POSIX', 'Windows'],
-    packages=['feedparser', 'feedparser.datetimes', 'feedparser.namespaces', 'feedparser.parsers'],
+    packages=['feedparser_craigslist', 'feedparser_craigslist.datetimes', 'feedparser_craigslist.namespaces', 'feedparser_craigslist.parsers'],
     install_requires=[
         'sgmllib3k;python_version>="3.0"',
     ],

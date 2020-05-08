@@ -223,13 +223,13 @@ def parse(url_file_stream_or_string, etag=None, modified=None, agent=None, refer
     """
 
     if not agent or sanitize_html is None or resolve_relative_uris is None:
-        import feedparser
+        import feedparser_craigslist
     if not agent:
-        agent = feedparser.USER_AGENT
+        agent = feedparser_craigslist.USER_AGENT
     if sanitize_html is None:
-        sanitize_html = feedparser.SANITIZE_HTML
+        sanitize_html = feedparser_craigslist.SANITIZE_HTML
     if resolve_relative_uris is None:
-        resolve_relative_uris = feedparser.RESOLVE_RELATIVE_URIS
+        resolve_relative_uris = feedparser_craigslist.RESOLVE_RELATIVE_URIS
 
     result = FeedParserDict(
         bozo=False,
